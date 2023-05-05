@@ -1,0 +1,75 @@
+.section-two{
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    .text-con{
+        width: auto;
+        height: auto;
+        .p-one{
+            letter-spacing: 5px;
+            font-weight: 600;
+            color: #c27b7f;
+        }
+        .p-two{
+            color: #2f4858;
+            font-weight: 700;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+        }
+    }
+    .all-con{
+        width: auto;
+        height: auto;
+    .img-con{
+        height: 70vh;
+        width: 50%;
+        background-image: url('https://wonted-react.vercel.app/assets/images/achive2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: -15px 15px 0px 0px rgba(194,123,127,1);
+    }
+    .card-con{
+        height: auto;
+        width: 45%;
+        
+        img{
+            background-color: #C27B7F;
+            width: 25%;
+            margin-top: 10px;
+            box-shadow: 4px 4px 3px 0px rgba(194,123,127,1);
+        }
+        .card{
+            box-shadow: 2px 0 15px 5px rgb(1 6 33 / 6%);
+            border: 0px;
+            p{
+                
+                font-weight: 600;
+            }
+            h5{
+                color: #2f4858;
+                font-weight: 700;
+                font-family: sans-serif;
+                letter-spacing: 2px;
+            }
+           
+            &:hover{  
+                transition: 0.5s;
+                transform: translateY(-6px);
+                background-color: #C27B7F;
+                img{
+                    border-radius: 50%;
+                    background-color: #876585;
+                    transition: 1s;
+                }
+                p{
+                    color: #fff;
+                }
+                h5{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+}

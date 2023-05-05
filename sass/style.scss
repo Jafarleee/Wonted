@@ -1,0 +1,56 @@
+@import 'reset';
+@import 'responsive';
+@import 'section-one';
+@import 'section-two';
+.all{
+    width: auto;
+    height: auto;
+    background-color: #F5EBE6;
+    position: relative;
+    .container{
+        width: auto;
+        height: auto;
+        background-color: #F5EBE6;
+        .box-one{
+            height: 70px;
+            width: 70px;
+            border: 5px solid #fcb0b4;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            animation: anim 20s infinite linear;
+            @keyframes anim{
+                0%{left:1000px;top:120px;}
+                100%{left:-80px;top:120px;}
+                
+            }
+        }
+        .box-two{
+            height: 50px;
+            width: 50px;
+            border: 5px solid #fcb0b4;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            animation: anim-one 20s infinite linear;
+            animation-delay: 1s;
+            @keyframes anim-one{
+                0%{left:1400px;top:500px;}
+                100%{left:-50px;top:500px;}
+                
+            }
+        }
+        
+        .navbar{
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            ul{
+                width: 100%;               
+                justify-content: end;
+            }
+        }
+
+        
+    }
+}
